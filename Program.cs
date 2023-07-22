@@ -15,7 +15,7 @@ namespace Fibonacci
                 Console.WriteLine("Digite quantos números quer na Sequência?( ATÉ 90.) ");
                 string input = Console.ReadLine();
 
-                if ( !long.TryParse(input, out long number)|| number <= 0 || number > 90 )
+                if ( !long.TryParse(input, out long number) || number <= 0 || number > 90 )
                 {
                     Console.WriteLine("Apenas números inteiros entre 1 e 90!");
                     Console.WriteLine();
@@ -26,9 +26,9 @@ namespace Fibonacci
                 for ( long i = 0; i < number; i++ )
                 {
                     z = x + y;
-  
+
                     Console.WriteLine(z);
-                    
+
                     x = y; y = z;
 
                 }
@@ -36,28 +36,19 @@ namespace Fibonacci
                 Console.WriteLine("Gostaria de continuar?(y/n)");
                 string resposta = Console.ReadLine();
 
-                if( resposta == "y" )
+                if ( resposta == "y" )
                 {
                     continue;
-                }else if( resposta == "n" ) 
-                {
-                    Environment.Exit(0);
-
-
-
                 }
-
-
-
+                else if ( resposta == "n" )
+                { //
+                    Environment.Exit(0);
+                }
 
 
             }
 
-
         }
 
     }
-
-
-
 }
