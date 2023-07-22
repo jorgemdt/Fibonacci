@@ -8,10 +8,7 @@ namespace Fibonacci
         static void Main(string [ ] args)
         {
             while ( true )
-            {
-
-                long x = 1, y = 0, z = 0;
-
+            {      
                 Console.WriteLine("Digite quantos números quer na Sequência?( ATÉ 90.) ");
                 string input = Console.ReadLine();
 
@@ -21,7 +18,8 @@ namespace Fibonacci
                     Console.WriteLine();
                     continue;
                 }
-
+                               
+                long x = 1, y = 0, z = 0;
 
                 for ( long i = 0; i < number; i++ )
                 {
@@ -30,19 +28,27 @@ namespace Fibonacci
                     Console.WriteLine(z);
 
                     x = y; y = z;
-
                 }
+                while ( true )
+                {
                 Console.WriteLine();
                 Console.WriteLine("Gostaria de continuar?(y/n)");
                 string resposta = Console.ReadLine();
 
-                if ( resposta == "y" )
-                {
-                    continue;
-                }
-                else if ( resposta == "n" )
-                { //
-                    Environment.Exit(0);
+                    if ( resposta == "y" )
+                    {
+                        break;
+                    }
+                    else if ( resposta == "n" )
+                    { 
+                        Environment.Exit(0);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Apenas y ou n.");
+                        continue;
+                    }
+
                 }
 
 
