@@ -51,6 +51,7 @@ namespace Fibonacci
                     else
                     {
                         Console.WriteLine("Apenas y ou n.");
+                        Console.WriteLine("====================================================");
                         continue;
                     }
 
