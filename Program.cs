@@ -28,14 +28,9 @@ namespace Fibonacci
                 for ( ulong i = 0; i < number; i++ )
                 {
                     z = x + y;
-                    if ( y > z )
-                    {
-                        Console.WriteLine("impreciso...");
-                    }
-                    else
-                    {
-                        Console.WriteLine(z.ToString("#,#,#,#,#,#"));
-                    }
+
+                    Console.WriteLine(z.ToString("#,#,#,#,#,#"));
+
                     x = y; y = z;
 
                 }
