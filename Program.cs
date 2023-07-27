@@ -4,18 +4,17 @@ namespace Fibonacci
 {
     class App
     {
-
         static void Main(string [ ] args)
         {
             while ( true )
             {
-                Console.WriteLine("Digite quantos números quer na Sequência?( Maximo 93.) ");
+                Console.WriteLine("Digite quantos números quer na Sequência?( Maximo 135.) ");
                 string input = Console.ReadLine();
                 Console.WriteLine("====================================================");
 
-                if ( !ulong.TryParse(input, out ulong number) || number <= 0 || number > 93 )
+                if ( !ulong.TryParse(input, out ulong number) || number <= 0 || number > 135 )
                 {
-                    Console.WriteLine("Apenas números inteiros entre 1 e 93!");
+                    Console.WriteLine("Apenas números inteiros entre 1 e 130!");
                     Console.WriteLine();
                     Console.WriteLine("====================================================");
 
@@ -23,7 +22,7 @@ namespace Fibonacci
                 }
 
                 //ulong numberFinal = 12200160415121876738;
-                ulong x = 1, y = 0, z;
+                decimal x = 1, y = 0, z;
 
                 for ( ulong i = 0; i < number; i++ )
                 {
