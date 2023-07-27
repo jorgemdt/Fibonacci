@@ -14,7 +14,7 @@ namespace Fibonacci
 
                 if ( !ulong.TryParse(input, out ulong number) || number <= 0 || number > 135 )
                 {
-                    Console.WriteLine("Apenas números inteiros entre 1 e 130!");
+                    Console.WriteLine("Apenas números inteiros entre 1 e 135!");
                     Console.WriteLine();
                     Console.WriteLine("====================================================");
 
